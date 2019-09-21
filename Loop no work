@@ -1,0 +1,72 @@
+#include <iostream>
+using namespace std;
+
+/*
+Story1:  Be careful not to vacuum the <NOUN> when you clean under your bed. 
+ 
+Story2:  <NAME> is a <OCCUPATION> who lives in <PLACE>. 
+ 
+Story3:  In the book War of the <PLURAL NOUN>, the main character is an anonymous <OCCUPATION>               
+who records the arrival of the <ANIMAL>s in <PLACE>. 
+ 
+Once the user has selected the story and input all the required words print out the story by plugging                   
+in all the words
+*/
+int main()
+{
+    char noun;
+    char name;
+    char occupation;
+    char place;
+    char pluralNoun;
+    char animal;
+    int input;
+    
+    while (input != 4)
+    {
+         cout << "Which story would you like to play? Enter the number of the story (1, 2, or 3) or type 4 to quit " << endl;
+         cin >> input;
+        if (input == 1)
+        {
+            cout << "Enter a noun: " << endl;
+            cin >> noun;
+            cout << "Be careful not to vaccum the " << noun << " when you clean under your bed." << endl;
+        }
+        else 
+        {
+            if (input == 2)
+            {
+                cout << "Enter a name: "<< endl;
+                cin >> name;
+                cout << "Enter an occupation: "<< endl;
+                cin >> occupation;
+                cout << "Enter a place: "<< endl;
+                cin >> place;
+                cout << name << "is a " << occupation << " who lives in " << place<< endl;
+            }
+            else
+            {
+                if (input == 3)
+                {
+                    cout << "Enter a plural noun: " << endl;
+                    cin >> pluralNoun;
+                    cout << "Enter an occupation: " << endl;
+                    cin >> occupation;
+                    cout << "Enter an animal: " << endl;
+                    cin >> animal;
+                    cout << "Enter a place: " << endl;
+                    cin >> place;
+                    cout << "In the book of the war of the " << animal <<", the main character is an anonymous " << occupation << " who records the arrival of the " << animal << "s" << " in " << place << "." <<endl;
+                }
+                else 
+                {
+                    if (input == 4)
+                    {
+                        cout << "Good Bye!" << endl;
+                    }
+                }
+            }
+        }
+    }
+    cout << "Good Bye!" << endl;
+}
